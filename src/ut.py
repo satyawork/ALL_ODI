@@ -40,77 +40,12 @@ modelDict = {
 
 }
 
-match = '''
-ndia vs Australia, Final - Cricket Score
-match_result,Australia won by 6 wkts
-team,IND 
-score,240-10
-overs,50
-player,dismissal,runs,balls,fours,sixes,strike_rate
-Rohit (c),"c Head b Maxwell",47,31,4,3,151.61
-Shubman Gill,"c Zampa b Starc",4,7,0,0,57.14
-Kohli,"b Cummins",54,63,4,0,85.71
-Shreyas Iyer,"c Josh Inglis b Cummins",4,3,1,0,133.33
-Rahul (wk),"c Josh Inglis b Starc",66,107,1,0,61.68
-Ravindra Jadeja,"c Josh Inglis b Hazlewood",9,22,0,0,40.91
-Suryakumar Yadav,"c Josh Inglis b Hazlewood",18,28,1,0,64.29
-Shami,"c Josh Inglis b Starc",6,10,1,0,60
-Bumrah,"lbw b Zampa",1,3,0,0,33.33
-Kuldeep Yadav,"run out (Labuschagne/Cummins)",10,18,0,0,55.56
-Siraj,not out,9,8,1,0,112.5
-extras,byes,leg_byes,wides,no_balls,penalty
-,,3,9,0,0
-total,240-10
-overs_played,50
-run_rate,4.8
-bowler,O,M,R,W,NB,WD,ECO
-Starc,10,0,55,3,0,4,5.5
-Hazlewood,10,0,60,2,0,1,6
-Maxwell,6,0,35,1,0,0,5.8
-Cummins (c),10,0,34,2,0,2,3.4
-Zampa,10,0,44,1,0,2,4.4
-Mitchell Marsh,2,0,5,0,0,0,2.5
-Head,2,0,4,0,0,0,2
-fall_of_wickets,score,over,batsman
-Shubman Gill,30-1,4.2
-Rohit,76-2,9.4
-Shreyas Iyer,81-3,10.2
-Kohli,148-4,28.3
-Ravindra Jadeja,178-5,35.5
-Rahul,203-6,41.3
-Shami,211-7,43.4
-Bumrah,214-8,44.5
-Suryakumar Yadav,226-9,47.3
-Kuldeep Yadav,240-10,50
-powerplays,overs,runs,mandatory
-0.1 - 10,80,AUS
-score,241-4
-overs,43
-player,dismissal,runs,balls,fours,sixes,strike_rate
-David Warner,"c Kohli b Shami",7,3,1,0,233.33
-Travis Head,"c Shubman Gill b Siraj",137,120,15,4,114.17
-Mitchell Marsh,"c Rahul b Bumrah",15,15,1,1,100
-Steven Smith,"lbw b Bumrah",4,9,1,0,44.44
-Marnus Labuschagne,not out,58,110,4,0,52.73
-Glenn Maxwell,not out,2,1,0,0,200
-extras,byes,leg_byes,wides,no_balls,penalty
-5,2,11,0,0
-total,241-4
-overs_played,43
-run_rate,5.6
-bowler,O,M,R,W,NB,WD,ECO
-Jasprit Bumrah,9,2,43,2,0,0,4.8
-Mohammed Shami,7,1,47,1,0,9,6.7
-Ravindra Jadeja,10,0,43,0,0,2,4.3
-Kuldeep Yadav,10,0,56,0,0,0,5.6
-Mohammed Siraj,7,0,45,1,0,0,6.4
-fall_of_wickets,score,over,batsman
-David Warner,16-1,1.1
-Mitchell Marsh,41-2,4.3
-Steven Smith,47-3,6.6
-Travis Head,239-4,42.5
-powerplays,overs,runs,mandatory
-0.1 - 10,60
+prompt_history = '''
+Analyse the given match report and JSON data, and use your cricket knowledge to generate a one-paragraph match summary. Ensure only the key facts explicitly mentioned in the data are included, while applying cricket insights on what should be highlighted in a summary, such as important statistics, key performances, turning points, and the match outcome. Keep the summary concise and accurate.
+Analyse the match report & json data, based on them generate a cricket match summary in 1 paragraph only,make summary such that important info will be included nothing else ?
+Analyse the given match report & JSON data, and use your cricket knowledge to generate a one-paragraph match summary. Ensure only the key facts explicitly mentioned in the data are included, while applying cricket insights on what should be highlighted in a summary, such as important statistics, key performances, turning points, and the match outcome. Keep the summary concise and accurate.
+Analyse the given JSON data & generate a one-paragraph match summary. Include key facts, starting with the first innings, followed by the second. Highlight important statistics, performances, turning points, and the match outcome. Keep it concise and accurate.
+Analyse the given match report & JSON data, and use cricket knowledge to generate a one-paragraph match summary. Apply cricket insights to highlight important statistics, key performances and the match outcome. Keep the summary concise and accurate.
 '''
 
 di={
