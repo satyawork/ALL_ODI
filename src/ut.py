@@ -11,6 +11,12 @@ bnb_config = BitsAndBytesConfig(
     bnb_4bit_compute_dtype=bfloat16
 )
 
+bnb8_config= BitsAndBytesConfig(
+    load_in_8bit=True,
+    bnb_8bit_quant_type='nf4',
+    bnb_8bit_use_double_quant=True,
+    bnb_8bit_compute_dtype=bfloat16
+)
 World_Cup_File = 'Notebook/cricket_summary.csv'
 prompts = [
     ['summary',"As a sports journalist give textual summary of above match from data provided above in 1 paragraph"],
